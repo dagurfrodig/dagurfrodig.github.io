@@ -1,0 +1,45 @@
+header, footer, nav, main, aside, article{
+    border: 0.5px solid;
+    
+}
+body{
+    margin: 30px;
+    display: grid;
+    grid-template-areas: 
+    "head head head head"
+    "nav nav nav nav"
+    "midja midja aside article"
+    "foot foot foot foot";
+}
+header{
+    grid-area: head;
+    text-align: center;
+    font-size: 125px;
+}
+nav{
+    grid-area: nav;
+    padding: 40px;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+
+}
+aside{
+    grid-area: aside;
+}
+main{
+    grid-area: midja;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: foot;
+    text-align: center;
+    padding: 20px;
+}
+div{
+    border: 1px dashed black;
+    padding: 30px;
+    margin: 30px;   
+}
