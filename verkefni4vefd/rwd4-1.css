@@ -20,13 +20,18 @@ nav{
     grid-area: nav;
     padding: 40px;
     align-items: start;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
 aside{
     grid-area: aside;
 }
+.picorder{
+    display: grid;
+    grid-template-columns:1fr;
+}
+
 main{
     grid-area: midja;
 }
@@ -60,6 +65,16 @@ header, footer, nav, main, aside, article{
         "article midja"
         "foot foot";
     }
+    .picorder{
+        align-items: start;
+        display: grid;
+        grid-template-columns:
+        1fr 1fr;
+    }
+    .picorder > img{
+        margin: 0;
+        width: 100%;
+    }
 }
 @media screen and (min-width:1024px){
     body{
@@ -71,6 +86,16 @@ header, footer, nav, main, aside, article{
         "nav nav nav nav"
         "aside midja midja article"
         "foot foot foot foot"
+    }
+    .picorder{
+        align-items: start;
+        display: grid;
+        grid-template-columns:
+        1fr 1fr 1fr 1fr;
+    }
+    .picorder > img{
+        margin: 0;
+        width: 100%;
     }
 }
 
