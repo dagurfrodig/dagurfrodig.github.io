@@ -1,0 +1,76 @@
+body{
+    background: teal;
+    margin: 30px;
+    display: grid;
+    grid-template-areas: 
+    "head"
+    "nav"
+    "aside"
+    "midja"
+    "article"
+    "foot";
+}
+
+header{
+    grid-area: head;
+    text-align: center;
+    font-size: 125px;
+}
+nav{
+    grid-area: nav;
+    padding: 40px;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+
+}
+aside{
+    grid-area: aside;
+}
+main{
+    grid-area: midja;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: foot;
+    text-align: center;
+    padding: 20px;
+}
+div{
+    border: 1px dashed black;
+    padding: 30px;
+    margin: 30px;   
+}
+header, footer, nav, main, aside, article{
+    border: 0.5px solid;
+    
+}
+
+@media screen and (min-width:700px){
+    body{
+        background: red;
+        margin: 30px;
+        display: grid;
+        grid-template-areas: 
+        "head head"
+        "nav nav"
+        "aside midja"
+        "article midja"
+        "foot foot";
+    }
+}
+@media screen and (min-width:1024px){
+    body{
+        background: silver;
+        margin: 30px;
+        display: grid;
+        grid-template-areas: 
+        "head head head head"
+        "nav nav nav nav"
+        "aside midja midja article"
+        "foot foot foot foot"
+    }
+}
+
