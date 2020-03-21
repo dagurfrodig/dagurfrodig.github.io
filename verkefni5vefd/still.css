@@ -1,0 +1,114 @@
+/* font-family: 'Roboto Mono', monospace; */
+body{
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(darkblue,cyan);
+    color: red;
+    margin: 0;
+    
+}
+.bil{
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.back{
+    background: linear-gradient(yellow,rgb(255, 102, 0));
+    color: black;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.adal{
+    display: grid;
+    grid-template-areas:
+    "vinstri hegri"
+    "vinstri ljost";
+}
+footer{
+    display: grid;
+    grid-template-areas:
+    "left middle right";
+}
+@media screen and (max-width:960px){
+    .adal{
+        display: grid;
+        grid-template-areas: 
+        "vinstri"
+        "vinstri" 
+        "hegri"
+        "ljost";
+    }
+    footer{
+        display: grid;
+        grid-template-areas:
+        "left"
+        "middle"
+        "right";
+    }
+}
+.left{
+    grid-area: left;
+}
+.middle{
+    grid-area: middle;
+}
+.right{
+    grid-area: right;
+}
+.vinstri{
+    grid-area: vinstri;
+}
+.hegri{
+    grid-area: hegri;
+}
+.ljost{
+    grid-area: ljost;
+    background-color: rgba(255,255,255,0.3);
+}
+.stor{
+    font-size: 25px;
+}
+a:link {
+    text-decoration: none;
+} 
+a:visited {
+    text-decoration: none;
+} 
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+.topnav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 500px;
+    height: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.verkefni{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 500px;
+    height: 100px;
+}
+.or{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 40px;
+    background-color: white;
+    padding: 1em 1em;
+    display: inline-block;
+}
+.innermenu{
+    background-color: blue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
